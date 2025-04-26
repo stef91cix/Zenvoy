@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZENVÖY - Concierge di Lusso</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'EB Garamond', serif;
+      background-color: #ffffff;
+      color: #121212;
+    }
+    header {
+      background: url('INSERISCI_LINK_IMMAGINE_CAROUSEL') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .service {
+      flex: 1 1 300px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #BFA046;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #121212;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ZENVÖY</h1>
+  <p>Concierge di Lusso - Esperienze Esclusive</p>
+</header>
+
+<section>
+  <h2>Scopri l'essenza di ZENVÖY</h2>
+  <p>ZENVÖY è un brand di concierge di lusso dedicato alla creazione di esperienze esclusive, viaggi privati e servizi su misura per chi cerca eleganza, riservatezza e momenti indimenticabili. Non seguiamo le tendenze — le creiamo.</p>
+</section>
+
+<section>
+  <h2>Servizi su Misura firmati ZENVÖY</h2>
+  <div class="services">
+    <div class="service">
+      <h3>Viaggi Privati</h3>
+      <p>Jet, elicotteri e itinerari su misura.</p>
+    </div>
+    <div class="service">
+      <h3>Yacht & Mare</h3>
+      <p>Crociere private nei luoghi più esclusivi.</p>
+    </div>
+    <div class="service">
+      <h3>Esperienze di Lusso</h3>
+      <p>Cene stellate, eventi VIP, attività uniche.</p>
+    </div>
+    <div class="service">
+      <h3>Eventi Privati</h3>
+      <p>Organizzazione di eventi esclusivi e riservati.</p>
+    </div>
+    <div class="service">
+      <h3>Personal Concierge</h3>
+      <p>Un assistente dedicato a ogni tua esigenza.</p>
+    </div>
+    <div class="service">
+      <h3>Luxury Shopping & Regali</h3>
+      <p>Accesso esclusivo a boutique e regali unici.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contattaci</h2>
+  <form action="https://formspree.io/f/INSERISCI_TUO_CODICE" method="POST">
+    <input type="text" name="name" placeholder="Nome" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Messaggio" required></textarea>
+    <button type="submit">Invia richiesta</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 ZENVÖY. Tutti i diritti riservati.
+</footer>
+
+</body>
+</html>
