@@ -1,19 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZENVÖY - Luxury Concierge</title>
+    <title>ZENVÖY | Concierge di Lusso su Misura</title>
 
     <!-- Collegamento a Google Fonts per EB Garamond -->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
         body {
             font-family: 'EB Garamond', serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
+            background: linear-gradient(135deg, #ffffff, #f5f2eb);
             color: #000;
         }
         header {
@@ -22,42 +24,49 @@
             text-align: center;
         }
         header img {
-            height: 50px;
+            height: 70px;
         }
-.carousel {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-}
-.carousel img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-.carousel img.active {
-  opacity: 1;
-}
-.hero-text {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
-  font-size: 40px;
-  font-family: 'EB Garamond', serif;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  border-radius: 10px;
-}
+        .carousel {
+          position: relative;
+          width: 100%;
+          height: 600px;
+          overflow: hidden;
+        }
+        .carousel img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+        }
+        .carousel img.active {
+          opacity: 1;
+        }
+        .hero-text {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          top: 50%;
+          transform: translateY(-50%);
+          color: white;
+          font-size: 40px;
+          font-family: 'EB Garamond', serif;
+          background: rgba(0, 0, 0, 0.4);
+          padding: 20px;
+          border-radius: 10px;
+        }
         .section {
             padding: 50px 20px;
             max-width: 1200px;
             margin: auto;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s ease-out;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
         .section h2 {
             color: #BFA046;
@@ -114,76 +123,76 @@
             cursor: pointer;
             font-size: 18px;
         }
+        button:hover {
+            background-color: #a08638;
+        }
     </style>
 </head>
 
 <body>
 
-   <header>
-    <img src="emptyLogo.png" alt="Zenvoy Logo" style="height: 50px;">
+<header>
+    <img src="emptyLogo.png" alt="Zenvoy Logo">
 </header>
 
 <div class="carousel">
-  <img src="1.png" alt="Luxury Travel" class="active">
-  <img src="5.png" alt="Luxury Experience">
-  <img src="6.png" alt="Concierge">
+  <img src="4.png" alt="Luxury Travel" class="active">
+  <img src="2.png" alt="Luxury Experience">
+  <img src="3.png" alt="Concierge">
   <div class="hero-text">
     <h1>Luxury Travel ZENVÖY</h1>
   </div>
 </div>
 
-    <div class="section">
-        <h2>Scopri l’essenza di ZENVÖY</h2>
-        <p>ZENVÖY è un brand di concierge di lusso dedicato alla creazione di esperienze esclusive, viaggi privati e servizi su misura per chi cerca eleganza, riservatezza e momenti indimenticabili.</p>
-    </div>
+<div class="section">
+    <h2>Scopri l’essenza di ZENVÖY</h2>
+    <p>ZENVÖY è un brand di concierge di lusso dedicato alla creazione di esperienze esclusive, viaggi privati e servizi su misura per chi cerca eleganza, riservatezza e momenti indimenticabili.</p>
+</div>
 
-    <div class="section">
-        <h2>Non seguiamo le tendenze — le creiamo.</h2>
-    </div>
+<div class="section">
+    <h2>Non seguiamo le tendenze — le creiamo.</h2>
+</div>
 
-    <div class="section">
-        <h2>Servizi su Misura firmati ZENVÖY</h2>
-        <div class="services">
-            <div class="service-card">
-                <img src="1.png" alt="Viaggi Privati">
-                <h3>Viaggi Privati</h3>
-                <p>Jet, elicotteri e itinerari personalizzati per raggiungere qualsiasi destinazione con stile.</p>
-            </div>
-            <div class="service-card">
-                <img src="5.png" alt="Esperienze di Lusso">
-                <h3>Esperienze di Lusso</h3>
-                <p>Cene stellate, eventi VIP, concerti e attività uniche create su misura.</p>
-            </div>
-            <div class="service-card">
-                <img src="6.png" alt="Concierge">
-                <h3>Concierge</h3>
-                <p>Organizzazione di eventi esclusivi, regali su misura, planner personali.</p>
-            </div>
+<div class="section">
+    <h2>Servizi su Misura firmati ZENVÖY</h2>
+    <div class="services">
+        <div class="service-card">
+            <img src="1.png" alt="Viaggi Privati">
+            <h3>Viaggi Privati</h3>
+            <p>Jet, elicotteri e itinerari personalizzati per raggiungere qualsiasi destinazione con stile.</p>
+        </div>
+        <div class="service-card">
+            <img src="5.png" alt="Esperienze di Lusso">
+            <h3>Esperienze di Lusso</h3>
+            <p>Cene stellate, eventi VIP, concerti e attività uniche create su misura.</p>
+        </div>
+        <div class="service-card">
+            <img src="6.png" alt="Concierge">
+            <h3>Concierge</h3>
+            <p>Organizzazione di eventi esclusivi, regali su misura, planner personali.</p>
         </div>
     </div>
+</div>
 
-    <div class="section">
-        <h2>Contattaci</h2>
-        <form
-  action="https://formspree.io/f/xwpopnky"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-    </div>
+<div class="section">
+    <h2>Contattaci</h2>
+    <form action="https://formspree.io/f/xwpopnky" method="POST">
+      <label>
+        Your email:
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Your message:
+        <textarea name="message" required></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
+</div>
 
-    <footer>
-        <p>© 2025 ZENVÖY. Tutti i diritti riservati.</p>
-    </footer>
+<footer>
+    <p>© 2025 ZENVÖY. Tutti i diritti riservati.</p>
+</footer>
+
 <script>
 let slides = document.querySelectorAll('.carousel img');
 let currentSlide = 0;
@@ -192,7 +201,23 @@ setInterval(() => {
   slides[currentSlide].classList.remove('active');
   currentSlide = (currentSlide + 1) % slides.length;
   slides[currentSlide].classList.add('active');
-}, 3000); // cambia ogni 3 secondi
+}, 3000);
+
+// Fade-in effect on scroll
+const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+sections.forEach(section => {
+  observer.observe(section);
+});
 </script>
+
 </body>
 </html>
