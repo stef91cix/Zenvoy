@@ -15,7 +15,7 @@
             font-family: 'EB Garamond', serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #ffffff, #f5f2eb);
+            background: linear-gradient(135deg, #faf7f0, #f0e6d2);
             color: #000;
         }
         header {
@@ -24,7 +24,7 @@
             text-align: center;
         }
         header img {
-            height: 70px;
+            height: 100px;
         }
         .carousel {
           position: relative;
@@ -42,19 +42,6 @@
         }
         .carousel img.active {
           opacity: 1;
-        }
-        .hero-text {
-          position: absolute;
-          width: 100%;
-          text-align: center;
-          top: 50%;
-          transform: translateY(-50%);
-          color: white;
-          font-size: 40px;
-          font-family: 'EB Garamond', serif;
-          background: rgba(0, 0, 0, 0.4);
-          padding: 20px;
-          border-radius: 10px;
         }
         .section {
             padding: 50px 20px;
@@ -131,17 +118,15 @@
 
 <body>
 
-<header>
-    <img src="emptyLogo.png" alt="Zenvoy Logo">
+<header style="display: flex; align-items: center; justify-content: center; gap: 20px; background: #000; padding: 20px;">
+    <img src="emptyLogo.png" alt="Zenvoy Logo" style="height: 100px;">
+    <span style="color: white; font-size: 24px; font-family: 'EB Garamond', serif;">ZENVÖY | Concierge di Lusso su Misura</span>
 </header>
 
 <div class="carousel">
   <img src="4.png" alt="Luxury Travel" class="active">
   <img src="2.png" alt="Luxury Experience">
   <img src="3.png" alt="Concierge">
-  <div class="hero-text">
-    <h1>Luxury Travel ZENVÖY</h1>
-  </div>
 </div>
 
 <div class="section">
