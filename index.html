@@ -116,21 +116,12 @@
         }
     </style>
 </head>
-<script>
-let slides = document.querySelectorAll('.carousel img');
-let currentSlide = 0;
 
-setInterval(() => {
-  slides[currentSlide].classList.remove('active');
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].classList.add('active');
-}, 3000); // cambia ogni 3 secondi
-</script>
 <body>
 
-    <header>
-        <img src="emptyLogo.png" alt="Zenvoy Logo" style="height: 50px;>
-    </header>
+   <header>
+    <img src="emptyLogo.png" alt="Zenvoy Logo" style="height: 50px;">
+</header>
 
 <div class="carousel">
   <img src="1.png" alt="Luxury Travel" class="active">
@@ -193,6 +184,15 @@ setInterval(() => {
     <footer>
         <p>© 2025 ZENVÖY. Tutti i diritti riservati.</p>
     </footer>
+<script>
+let slides = document.querySelectorAll('.carousel img');
+let currentSlide = 0;
 
+setInterval(() => {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}, 3000); // cambia ogni 3 secondi
+</script>
 </body>
 </html>
